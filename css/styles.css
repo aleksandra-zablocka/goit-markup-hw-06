@@ -21,6 +21,7 @@
   --icons-border: #0000001a;
   --icons-transparent-grey: rgba(255, 255, 255, 0.1);
   --label: rgba(47, 48, 58, 0.8);
+  --input-email: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -39,7 +40,6 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  /* background-color: yellow; */
 }
 
 .list-style-none {
@@ -279,10 +279,6 @@ body {
   line-height: 1.87;
 }
 
-/*29.12.2022*/
-
-/* header-container settings */
-
 .header-parent {
   display: flex;
   width: 1200px;
@@ -295,8 +291,6 @@ body {
   display: flex;
   width: 254px;
   justify-content: space-between;
-  /* background-color: teal; */
-  /* border: dotted violet 2px; */
 }
 
 .nav-links-parent {
@@ -305,8 +299,6 @@ body {
   justify-content: flex-end;
   gap: 30px;
   flex-grow: 0.5;
-  /* background-color: orange; */
-  /* border: dotted violet 2px; */
 }
 
 .icon-with-text {
@@ -400,12 +392,6 @@ body {
   margin-bottom: 10px;
 }
 
-.foot-parent {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-}
-
 .addr-list > li:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -450,7 +436,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* background-color: teal; */
 }
 
 .sec-2 {
@@ -463,7 +448,6 @@ header {
 
 .navig {
   flex-grow: 1;
-  /* background-color: violet; */
   padding-left: 93px;
 }
 
@@ -522,17 +506,27 @@ header {
   cursor: pointer;
 }
 
-/* .icon-footer {
-  fill: var(--icons-white);
-} */
-
 .icon-footer:hover,
 .icon-footer:focus {
   cursor: pointer;
 }
 
+.foot-parent {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .footer-social-media {
   color: var(--icons-white);
+  margin-bottom: 20px;
+}
+
+.footer-form-description {
+  color: var(--icons-white);
+  margin-bottom: 20px;
 }
 
 .footer-icons-social-media {
@@ -547,10 +541,6 @@ header {
 
 .footer-icons-social-media li:not(:last-child) {
   padding-right: 10px;
-}
-
-.footer-join-us {
-  margin-left: 70px;
 }
 
 .circle {
@@ -580,8 +570,6 @@ header {
   width: 44px;
   background-color: var(--icons-transparent-grey);
   border-radius: 100px;
-  margin-top: 16px;
-  margin-bottom: 5px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -590,8 +578,6 @@ header {
 .circle2:hover {
   background-color: var(--bg-blue);
 }
-
-/* 15.01 */
 
 .box {
   position: relative;
@@ -677,4 +663,27 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-newsletter-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--input-email);
+  padding-left: 16px;
+  margin-right: 12px;
+}
+
+.footer-newsletter-input::placeholder {
+  color: var(--input-email);
+}
+
+.footer-newsletter-button {
+  width: 200px;
+  height: 50px;
 }
