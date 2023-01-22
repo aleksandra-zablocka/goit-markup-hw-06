@@ -396,15 +396,30 @@
         <form class="modal-form">
           <div class="form-field">
             <label class="modal-label" for="modal-name">Imię</label>
-            <input type="text" id="modal-name" name="modal-name" class="modal-input" />
+            <span class="modal-input-field">
+              <input type="text" id="modal-name" name="modal-name" class="modal-input" />
+              <svg class="modal-input-icon" height="12px" width="12px">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field">
             <label class="modal-label" for="modal-phone">Telefon</label>
-            <input type="tel" id="modal-tel" name="modal-tel" class="modal-input" />
+            <span class="modal-input-field">
+              <input type="tel" id="modal-tel" name="modal-tel" class="modal-input" />
+              <svg class="modal-input-icon" height="12px" width="12px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field">
             <label class="modal-label" for="modal-email">E-mail</label>
-            <input type="email" id="modal-email" name="modal-email" class="modal-input" />
+            <span class="modal-input-field">
+              <input type="email" id="modal-email" name="modal-email" class="modal-input" />
+              <svg class="modal-input-icon" height="12px" width="12px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field">
             <label class="label-text-area"
@@ -413,9 +428,10 @@
             </label>
           </div>
           <div class="policies">
-            <label>
-              <input id="policies" type="checkbox" />
-              Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+              <label class="policies-label"
+              >Oświadczam iż akceptuję <a class="policies-link" href="">Regulamin</a> i
+              <a class="policies-link" href="">Politykę Prywatności</a>.
+              <input id="policies" type="checkbox" class="policies-input" />
             </label>
           </div>
 
