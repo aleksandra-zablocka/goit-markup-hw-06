@@ -686,6 +686,7 @@ header {
   color: var(--input-placeholder-footer);
   padding-left: 16px;
   margin-right: 12px;
+  outline: none;
 }
 
 .footer-newsletter-input::placeholder {
@@ -779,6 +780,10 @@ header {
   position: relative;
 }
 
+.policies-label {
+  cursor: pointer;
+}
+
 .policies-link {
   color: var(--text-blue);
 }
@@ -798,6 +803,10 @@ header {
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 3px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.policies-input:checked + .policies-label::before {
+  background-color: var(--bg-blue);
 }
 
 .modal-button-div {
