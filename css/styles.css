@@ -230,6 +230,7 @@ body {
   text-decoration: none;
 }
 
+.address-address,
 .address-mail,
 .address-tel {
   text-decoration: none;
@@ -763,7 +764,7 @@ header {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .modal-input:focus-within {
@@ -821,7 +822,7 @@ header {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .comment-area:hover,
