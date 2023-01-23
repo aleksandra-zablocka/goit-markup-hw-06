@@ -81,6 +81,7 @@ body {
 .agencja,
 .portfolio {
   position: relative;
+  color: var(--text-blue);
 }
 
 .agencja::after,
@@ -693,6 +694,10 @@ header {
   color: var(--input-email);
 }
 
+.footer-newsletter-input:focus-within {
+  border-color: #2196f3;
+}
+
 .footer-newsletter-button {
   width: 200px;
   height: 50px;
@@ -744,10 +749,39 @@ header {
   border-radius: 4px;
   padding-left: 40px;
   outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal-input:focus-within {
-  border-color: #2196f3;
+  border-color: var(--bg-blue);
+}
+
+.modal-input-field:focus-within .modal-input-icon {
+  fill: var(--icons-blue);
+}
+
+.modal-input-field {
+  position: relative;
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-field:hover .modal-input {
+  border-color: var(--bg-blue);
+}
+
+.modal-input-field:hover .modal-input-icon {
+  fill: var(--icons-blue);
 }
 
 .modal-label {
@@ -771,6 +805,14 @@ header {
   border: 1px solid var(--input-border-modal);
   border-radius: 4px;
   outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.comment-area:hover {
+  border-color: var(--bg-blue);
 }
 
 .comment-area:focus-within {
@@ -840,15 +882,4 @@ header {
   letter-spacing: 0.06em;
   cursor: pointer;
   margin: 0 auto;
-}
-
-.modal-input-field {
-  position: relative;
-  /* cursor: pointer; */
-}
-
-.modal-input-icon {
-  position: absolute;
-  top: 2px;
-  left: 15px;
 }
