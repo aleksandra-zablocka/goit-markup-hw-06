@@ -567,7 +567,8 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.circle:hover {
+.circle:hover,
+.circle:focus {
   background-color: var(--bg-blue);
 }
 
@@ -584,7 +585,8 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.circle2:hover {
+.circle2:hover,
+.circle2:focus {
   background-color: var(--bg-blue);
 }
 
@@ -611,7 +613,8 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-cards-item:hover .overlay {
+.portfolio-cards-item:hover .overlay,
+.portfolio-cards-item:focus .overlay {
   transform: translateY(-100%);
 }
 
@@ -776,11 +779,13 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input-field:hover .modal-input {
+.modal-input-field:hover .modal-input,
+.modal-input-field:focus .modal-input {
   border-color: var(--bg-blue);
 }
 
-.modal-input-field:hover .modal-input-icon {
+.modal-input-field:hover .modal-input-icon,
+.modal-input-field:focus .modal-input-icon {
   fill: var(--icons-blue);
 }
 
@@ -811,7 +816,8 @@ header {
   cursor: pointer;
 }
 
-.comment-area:hover {
+.comment-area:hover,
+.comment-area:focus {
   border-color: var(--bg-blue);
 }
 
@@ -834,6 +840,13 @@ header {
 
 .policies-label {
   cursor: pointer;
+  position: relative;
+}
+
+.policies-icon {
+  position: absolute;
+  top: 1px;
+  left: -24px;
 }
 
 .policies-link {
@@ -847,10 +860,10 @@ header {
 .policies-label::before {
   display: block;
   position: absolute;
-  left: 15px;
-  top: 4px;
+  left: -20.5px;
+  top: 1px;
   content: "";
-  width: 16px;
+  width: 15px;
   height: 15px;
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 3px;
