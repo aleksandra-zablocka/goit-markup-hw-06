@@ -691,6 +691,9 @@ header {
   padding-left: 16px;
   margin-right: 12px;
   outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-newsletter-input::placeholder {
@@ -698,7 +701,12 @@ header {
 }
 
 .footer-newsletter-input:focus-within {
-  border-color: #2196f3;
+  border-color: var(--bg-blue);
+}
+
+.footer-newsletter-input:hover,
+.footer-newsletter-input:focus {
+  border-color: var(--bg-blue);
 }
 
 .footer-newsletter-button {
