@@ -781,7 +781,7 @@ header {
 
 .modal-input-icon {
   position: absolute;
-  top: 2px;
+  top: 14px;
   left: 15px;
   transition-property: fill;
   transition-duration: 250ms;
