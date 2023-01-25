@@ -7,6 +7,7 @@
   --bg-dark-grey: #2f303a;
   --bg-blue: #2196f3;
   --bg-blue-rgba: rgba(33, 150, 243, 0.9);
+  --bg-blue-bright: rgb(61, 162, 246);
   --bg-grey: #f5f4fa;
   --bg-white: #ffffff;
   --bg-backdrop: rgba(0, 0, 0, 0.2);
@@ -157,6 +158,12 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.but-sec-1-index:hover,
+.but-sec-1-index:focus {
+  background-color: var(--bg-blue-bright);
+  /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .header4-sec-2-index {
@@ -729,6 +736,12 @@ header {
   cursor: pointer;
 }
 
+.footer-newsletter-button:hover,
+.footer-newsletter-button:focus {
+  background-color: var(--bg-blue-bright);
+  /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
 .footer-newsletter-form {
   display: flex;
 }
@@ -911,4 +924,9 @@ header {
   letter-spacing: 0.06em;
   cursor: pointer;
   margin: 0 auto;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--bg-blue-bright);
 }
